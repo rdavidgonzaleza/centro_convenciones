@@ -85,12 +85,11 @@ public class Aplicacion extends javax.swing.JFrame {
     private void initComponents() {
 
         bg = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
         eventosVentana = new javax.swing.JButton();
         gCertificadoButton = new javax.swing.JButton();
         salirVentana = new javax.swing.JButton();
         salonButton = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -104,13 +103,6 @@ public class Aplicacion extends javax.swing.JFrame {
 
         bg.setBackground(new java.awt.Color(255, 255, 255));
         bg.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(2);
-        jTextArea1.setText("\tMENU");
-        jScrollPane1.setViewportView(jTextArea1);
-
-        bg.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 40, -1, -1));
 
         eventosVentana.setText("EVENTOS");
         eventosVentana.addActionListener(new java.awt.event.ActionListener() {
@@ -143,6 +135,11 @@ public class Aplicacion extends javax.swing.JFrame {
             }
         });
         bg.add(salonButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 140, -1, -1));
+
+        jLabel1.setFont(new java.awt.Font("DejaVu Sans Mono", 0, 18)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Gestor de eventos");
+        bg.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 600, 50));
 
         getContentPane().add(bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 600, 400));
         setJMenuBar(jMenuBar1);
@@ -217,9 +214,8 @@ public class Aplicacion extends javax.swing.JFrame {
     private javax.swing.JPanel bg;
     private javax.swing.JButton eventosVentana;
     private javax.swing.JButton gCertificadoButton;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JButton salirVentana;
     private javax.swing.JButton salonButton;
     // End of variables declaration//GEN-END:variables

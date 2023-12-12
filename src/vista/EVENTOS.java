@@ -57,7 +57,6 @@ public class EVENTOS extends javax.swing.JFrame {
         anadirAsistentesButton = new javax.swing.JButton();
 
         actividadesFrame.setLocationByPlatform(true);
-        actividadesFrame.setMaximumSize(new java.awt.Dimension(400, 300));
         actividadesFrame.setMinimumSize(new java.awt.Dimension(400, 300));
         actividadesFrame.setResizable(false);
 
@@ -91,7 +90,7 @@ public class EVENTOS extends javax.swing.JFrame {
             .addComponent(bgActividades, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setAutoRequestFocus(false);
         setLocation(new java.awt.Point(0, 0));
         setLocationByPlatform(true);
