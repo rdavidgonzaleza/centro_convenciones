@@ -1,15 +1,17 @@
 package model;
 
+import java.util.ArrayList;
+
 public class Actividades {
     private String descripcion;
     private int numeroPersonas;
-    private Asistente[] listaAsistentes;
+    private ArrayList <Asistente> listaAsistentes;
     private SalonesCdC salones;
     
     public Actividades() {
     }
 
-    public Actividades(String descripcion, int numeroPersonas, Asistente[] listaAsistentes, SalonesCdC salones) {
+    public Actividades(String descripcion, int numeroPersonas, ArrayList listaAsistentes, SalonesCdC salones) {
         this.descripcion = descripcion;
         this.numeroPersonas = numeroPersonas;
         this.listaAsistentes = listaAsistentes;
@@ -32,11 +34,11 @@ public class Actividades {
         this.numeroPersonas = numeroPersonas;
     }
 
-    public Asistente[] getListaAsistentes() {
+    public ArrayList getListaAsistentes() {
         return listaAsistentes;
     }
 
-    public void setListaAsistentes(Asistente[] listaAsistentes) {
+    public void setListaAsistentes(ArrayList listaAsistentes) {
         this.listaAsistentes = listaAsistentes;
     }
 

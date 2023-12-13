@@ -1,17 +1,25 @@
 package model;
 
 public class SalonesCdC {
+    private String nombre;
     private boolean disponibilidad;
     private int capacidad, nroSillas, nroMesas;
     private Eventos eventos;
     public SalonesCdC() {
     }
-    public SalonesCdC(boolean disponibilidad, int capacidad, int nroSillas, int nroMesas, Eventos eventos) {
+    public SalonesCdC(String nombre, boolean disponibilidad, int capacidad, int nroSillas, int nroMesas, Eventos eventos) {
+        this.nombre = nombre;
         this.disponibilidad = disponibilidad;
         this.capacidad = capacidad;
         this.nroSillas = nroSillas;
         this.nroMesas = nroMesas;
         this.eventos = eventos;
+    }
+    public String getNombre(){
+        return nombre;
+    }
+    public void setNombre(String nombre){
+        this.nombre = nombre;
     }
     public boolean isDisponibilidad() {
         return disponibilidad;
